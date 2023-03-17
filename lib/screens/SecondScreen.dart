@@ -52,11 +52,8 @@ class _SecondScreenState extends State<SecondScreen> {
                         fontSize: 25.0
                       ),),
                     ),
-                    IconButton(onPressed: (){
-                      Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context)=>FirstScreen())
-                      );
-                    }, icon: Icon(Icons.settings))
+                    IconButton(onPressed: (){},
+                     icon: Icon(Icons.settings))
                   ],
                 ),
                 SizedBox(height: 20.0,),

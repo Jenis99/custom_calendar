@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:calendar_timeline/calendar_timeline.dart';
-import 'package:horizontal_calendar/horizontal_calendar.dart';
 class FirstScreen extends StatefulWidget {
   const FirstScreen({super.key});
 
@@ -57,17 +56,6 @@ class _FirstScreenState extends State<FirstScreen> {
                 
                 
               ),
-              // HorizontalCalendar(
-      //       date: DateTime.now(),
-      //       textColor: Colors.black45,
-      //       backgroundColor: Colors.white,
-      //       selectedColor: Colors.blue,
-      //       showMonth:true,
-      //       onDateSelected: (date) {
-      //         print(date.toString());
-      //       },
-      // ),
-
             SizedBox(height: 20.0,),
             Image.asset("img/Home.png",width: 400.0,),
             SizedBox(height: 20.0,),
