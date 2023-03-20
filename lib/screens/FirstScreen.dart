@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:calendar_timeline/calendar_timeline.dart';
-import 'package:date_picker_timeline/date_picker_timeline.dart';
 
 class FirstScreen extends StatefulWidget {
   const FirstScreen({super.key});
