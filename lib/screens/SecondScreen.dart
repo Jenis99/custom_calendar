@@ -2,7 +2,6 @@ import 'package:custom_calendar/screens/FirstScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:syncfusion_flutter_calendar/calendar.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class SecondScreen extends StatefulWidget {
@@ -56,7 +55,11 @@ class _SecondScreenState extends State<SecondScreen> {
                           fontWeight: FontWeight.bold, fontSize: 25.0),
                     ),
                   ),
-                  IconButton(onPressed: () {}, icon: Icon(Icons.settings))
+                  IconButton(onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: ((context) => FirstScreen())
+                    ));
+                  }, icon: Icon(Icons.settings))
                 ],
               ),
               SizedBox(
@@ -89,7 +92,7 @@ class _SecondScreenState extends State<SecondScreen> {
                 ),
               ),
               SizedBox(
-                height: 20.0,
+                height: 50.0,
               ),
               Text(
                 "I'm available on the",

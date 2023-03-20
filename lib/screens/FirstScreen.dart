@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:calendar_timeline/calendar_timeline.dart';
+import 'package:date_picker_timeline/date_picker_timeline.dart';
 
 class FirstScreen extends StatefulWidget {
   const FirstScreen({super.key});
@@ -12,6 +13,8 @@ class FirstScreen extends StatefulWidget {
 
 class _FirstScreenState extends State<FirstScreen> {
   @override
+   DateTime _selectedValue = DateTime(2003, 1, 1);
+
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
@@ -47,10 +50,10 @@ class _FirstScreenState extends State<FirstScreen> {
               ],
             ),
             SizedBox(
-              height: 20.0,
+              height: 25.0,
             ),
             CalendarTimeline(
-              initialDate: DateTime.now(),
+              initialDate: DateTime(2023, 1, 1),
               firstDate: DateTime(2019, 1, 15),
               lastDate: DateTime(2030, 11, 20),
               onDateSelected: (date) => print(date),
@@ -60,7 +63,7 @@ class _FirstScreenState extends State<FirstScreen> {
               // dayNameColor: Colors.grey,
               activeDayColor: Colors.white,
               activeBackgroundDayColor: Colors.red[400],
-              dotsColor: Colors.transparent,
+              // dotsColor: Colors.transparent,
               locale: 'en_ISO',
             ),
             SizedBox(
@@ -78,7 +81,7 @@ class _FirstScreenState extends State<FirstScreen> {
               style: TextStyle(
                   color: Colors.red[400],
                   fontWeight: FontWeight.bold,
-                  fontSize: 20.0),
+                  fontSize: 25.0),
             ),
             SizedBox(
               height: 20.0,
